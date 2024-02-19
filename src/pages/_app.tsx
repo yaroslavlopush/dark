@@ -1,9 +1,9 @@
 import "@/styles/globals.css";
-import { Inter } from 'next/font/google'
+import { inter } from "@/styles/fonts";
 import type { AppProps } from "next/app";
-import { SessionProvider } from "next-auth/react"
+import { SessionProvider } from "next-auth/react";
+import Header from '../components/Header/Header';
 
-const inter = Inter({ subsets: ["latin"] });
 
 export default function App({ Component, pageProps: { session, ...pageProps } }: AppProps) {
   return (
@@ -14,6 +14,7 @@ export default function App({ Component, pageProps: { session, ...pageProps } }:
         }
       `}</style>
       <SessionProvider session={session}>
+        <Header />
         <Component {...pageProps} />
       </SessionProvider>
     </>

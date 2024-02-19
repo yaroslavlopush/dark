@@ -26,6 +26,8 @@ const StyledInnerContainer = styled.div`
 const StyledLeftSide = styled.div`
     background-color: #fff;
     border-radius: 14px 0 0 14px;
+    padding: 24px;
+    max-width: 100%;
 
     @media only screen and (min-width: 1024px) {
         width: 576px;
