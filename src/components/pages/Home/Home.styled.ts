@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 
-const StyledHeader = styled.div`
-    background-color: #fff;
-    text-align: center;
-    padding: 20px;
-    font-size: 32px;
-`;
-
 const StyledContainer = styled.div`
     display: flex;
     justify-content: center;
@@ -44,5 +37,5 @@ const StyledRightSide = styled.div`
     }
 `;
 
-export { StyledHeader, StyledContainer, StyledInnerContainer, StyledLeftSide, StyledRightSide };
+export { StyledContainer, StyledInnerContainer, StyledLeftSide, StyledRightSide };
 

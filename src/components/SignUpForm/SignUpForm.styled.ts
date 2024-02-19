@@ -116,6 +116,7 @@ const StyledBottomLogIn = styled(StyledSubHeader)`
     font-size: 12px;
     margin-bottom: 41px;
     margin-top: 10px;
+    font-family: ${ptSerif.style.fontFamily};
 `;
 
 export { StyledContainer, StyledH1, StyledSubHeader, StyledForm, StyledSubmitButton, StyledLine, StyledTermsText, StyledBottomLogIn };

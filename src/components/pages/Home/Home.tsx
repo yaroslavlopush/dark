@@ -1,11 +1,10 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { StyledHeader, StyledContainer, StyledInnerContainer, StyledLeftSide, StyledRightSide } from './Home.styled';
+import { StyledContainer, StyledInnerContainer, StyledLeftSide, StyledRightSide } from './Home.styled';
 import laptopImage from '@/../public/laptop-image.jpg';
 import SignUpForm from '@/components/SignUpForm/SignUpForm';
 import LogInForm from '@/components/LogInForm/LogInForm';
 import { useRouter } from 'next/router';
-import { parseCookies } from 'nookies';
 import { useSession } from "next-auth/react";
 import useAuthenticated from '../../../hooks/useAuthenticated';
 

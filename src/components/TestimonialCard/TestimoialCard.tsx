@@ -1,9 +1,6 @@
-'use client';
-
 import React from 'react';
 import { Testimonial } from '../Slider/testimonials.data';
 import { StyledContainer, AvatarContainer, AvatarPhoto, UserName, TestimonialText } from './TestimoialCard.styled';
-import { cabin, ptSerif } from '@/styles/fonts';
 
 interface Props {
     testimonial: Testimonial;
