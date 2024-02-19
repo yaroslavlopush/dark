@@ -7,7 +7,7 @@ const LogOutButton = styled.button`
     font-family: ${ptSerif.style.fontFamily};
     background-color: transparent;
     color: #343537;
-    padding: 16px 32px;
+    padding: 12px;
     border-radius: 14px;
     cursor: pointer;
     position: absolute;
@@ -18,6 +18,10 @@ const LogOutButton = styled.button`
     &:active {
         background-color: #eeeeee;
     } 
+
+    @media only screen and (min-width: 1024px) {
+        padding: 16px 32px;
+    }
 `;
 
 const StyledHeader = styled.div`
