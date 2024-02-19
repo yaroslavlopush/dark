@@ -1,5 +1,3 @@
-'use client';
-
 import React, { useRef } from 'react';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -49,18 +47,20 @@ const Slider: React.FC<SliderProps> = ({ testimonials }) => {
         arrows: false,
     };
 
-    let sliderRef: SlickSlider = useRef(null);
+    let sliderRef = useRef<SlickSlider | null>(null);
     const next = () => {
-        sliderRef.slickNext();
+        sliderRef.current?.slickNext();
     };
     const previous = () => {
-        sliderRef.slickPrev();
+        sliderRef.current?.slickPrev();
     };
 
     return (
         <StyledContainer>
             <SlickSlider ref={(slider: SlickSlider) => {
-                sliderRef = slider;
+                if (slider) {
+                    sliderRef.current = slider;
+                }
             }} {...settings}>
                 {testimonials.map((testimonial, index) => (
                     <TestimonialCard key={index} testimonial={testimonial} />
@@ -74,4 +74,4 @@ const Slider: React.FC<SliderProps> = ({ testimonials }) => {
     )
 }
 
-export default Slider; 
+export default Slider;
