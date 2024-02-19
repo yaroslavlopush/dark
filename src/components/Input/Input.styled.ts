@@ -1,8 +1,10 @@
+import { cabin } from '@/styles/fonts';
 import styled from 'styled-components';
 
 const StyledInputContainer = styled.div<{ $small?: boolean; }>`
     width: 100%;
     margin-bottom: 16px;
+    font-family: ${cabin.style.fontFamily};
 
     @media only screen and (min-width: 1024px) {
         width: ${props => props.$small ? "47%" : "100%"};
@@ -18,6 +20,15 @@ const StyledInput = styled.input`
     height: 50px;
     font-size: 16px;
     line-height: 24px;
+    font-family: ${cabin.style.fontFamily};
+
+    &:focus-visible {
+        outline: none;
+    }
+
+    &:-webkit-autofill {
+        background-color: transparent;
+    }
 `;
 
 const Styledlable = styled.label`

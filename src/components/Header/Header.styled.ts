@@ -26,6 +26,7 @@ const StyledHeader = styled.div`
     padding: 20px;
     font-size: 32px;
     margin-bottom: 50px;
+    font-family: ${ptSerif.style.fontFamily};
 `;
 
 const HeaderContainer = styled.div`

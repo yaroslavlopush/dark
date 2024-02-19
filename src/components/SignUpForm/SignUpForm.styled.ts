@@ -1,3 +1,4 @@
+import { cabin, ptSerif } from '@/styles/fonts';
 import styled from 'styled-components';
 
 const StyledContainer = styled.div`
@@ -8,6 +9,7 @@ const StyledH1 = styled.h1`
     font-size: 34px;
     line-height: 51px;
     font-weight: 400;
+    font-family: ${cabin.style.fontFamily};
 `;
 
 const StyledSubHeader = styled.div`
@@ -16,6 +18,7 @@ const StyledSubHeader = styled.div`
     margin-bottom: 40px;
     font-size: 14px;
     line-height: 21px;
+    font-family: ${ptSerif.style.fontFamily};
 
     button {
         color: rgba(76, 77, 79, 1);
@@ -44,6 +47,7 @@ const StyledSubmitButton = styled.button`
     font-size: 14px;
     line-height: 21px;
     cursor: pointer;
+    font-family: ${cabin.style.fontFamily};
 
     &:active {
         top: 1px;
@@ -99,6 +103,7 @@ const StyledTermsText = styled.div`
     margin-bottom: 16px;
     font-size: 12px;
     line-height: 21px;
+    font-family: ${ptSerif.style.fontFamily};
     
     a {
         color: rgba(76, 77, 79, 1);

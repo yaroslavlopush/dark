@@ -1,3 +1,4 @@
+import { cabin } from '@/styles/fonts';
 import styled from 'styled-components';
 
 const StyledButton = styled.button`
@@ -10,6 +11,7 @@ const StyledButton = styled.button`
     background: #fff;
     cursor: pointer;
     position: relative;
+    font-family: ${cabin.style.fontFamily};
 
     display: flex;
     justify-content: center;

@@ -1,3 +1,4 @@
+import { ptSerif } from '@/styles/fonts';
 import styled from 'styled-components';
 
 const StyledInput = styled.input`
@@ -26,6 +27,7 @@ const StyledLabel = styled.label`
     font-size: 12px;
     line-height: 21px;
     margin-left: 12px;
+    font-family: ${ptSerif.style.fontFamily};
 `;
 
 export { StyledCheckboxContainer, StyledInput, StyledLabel };
